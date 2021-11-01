@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS LogIn */
+#login{
+	heght: 70px;
+	text-align: center;
+    margin-top: 150px;
+}
+#noidung{
+	height: 500px;
+}
+#image{
+	height:50px;
+	padding: 0px;
+	margin-top: 150px;
+}
+input{
+	border: none;
+	width: 100%;
+	height: 45px;
+	border-bottom: solid 2pt #000000;
+	outline: none;
+	font-size: 16pt;
+}
+#emailaddress{
+	height: 40px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	width: 95%;
+	padding: 0px;
+}
+#emails{
+	padding-left: 0px;
+}
+#pass{
+	padding-left: 0px;
+}
+#password{
+	height: 40px;
+	width: 95%;
+}
+#dk{
+	float: left;
+	padding-left: 30px;
+	width:  30px!important;
+}
+#jav{
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 14pt;
+}
+#forgot{
+	height: 30px;
+}
+#forgot ul{
+	list-style-type: none;
+	margin-top: 10px;
+}
+#forgot ul li a{
+	font-size: 14pt;
+}
+#bylogging{
+	height: 30px;
+	padding-left: 0px;
+}
+#bylogging ul{
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 20px;
+}
+#bylogging ul li a{
+	font-size: 14pt;
+}
+#butlogin{
+	background-color: #171828;
+	height: 40px;
+	margin-top: 110px;
+	text-align: center;
+	color: #FFFFFF;
+    font-size: 14pt;
+	justify-content: center;
+	display: flex;
+    flex-direction: column;
+	padding: 0px;
+	
+}

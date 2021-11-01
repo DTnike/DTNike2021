@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>	 
+	  <!-- Bootstrap -->
+	  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <link href="css/common.css" rel="stylesheet">
+	  <link href="css/cart.css" rel="stylesheet">
+	  <link href="css/font-awesome/css/all.min.css" rel="stylesheet"> 
+	   <!-- jQuery  -->
+	  <script src="js/jquery-3.4.1.min.js"></script>
+	  <script src="js/popper.min.js"></script> 
+	  <script src="js/bootstrap-4.4.1.js"></script>
+	  <script>
+		  $(document).ready(function(){
+			  $("#blackscreen").hide();
+			  $("#navimb").hide();
+			  $("#searchfillmb").hide();
+			  
+			  $("#iconmenu").click(function(){
+				  $("#navimb").slideToggle();
+				  $("#blackscreen").fadeToggle();
+				  $("#iconmenu i").toggleClass("fa-bars fa-times");
+				  $("#searchfillmb").fadeOut();
+			  })
+			  $(".searchicon").click(function(){
+				  $("#searchfillmb").fadeToggle();
+				  $("#blackscreen").fadeOut();
+			  })
+			  
+			  $("#blackscreen").click(function(){
+				  $("#navimb").slideUp();
+				  $("#blackscreen").fadeOut();
+				  $("#iconmenu i").toggleClass("fa-bars fa-times");
+			  })
+		  })
+	  </script>
+  </head>
+  <body>
+	   <!--blackscreen-->
+	  <div class="container-fluid" id="blackscreen"></div>
+	<!--header-->
+	  <div class="container-fluid" id="header">
+		  <div class="row">
+			  <div class="col-xl-2
+						  col-lg-2
+						  col-md-3
+						  col-sm-4
+						  col-4" id="logo">
+				  <a href="Home.html"><img src="image/logo/logo.png" class="img-fluid"></a>
+			  </div>
+			  <div class="col-xl-4 offset-xl-2
+						  col-lg-5 offset-lg-2
+						  col-md-6 offset-md-1
+						  d-none d-md-block" id="deal">
+				  FREE SHIPPING on orders $200 or more !
+			  </div>
+		  </div>
+	  </div>
+	  <!--navi-->
+	  <div class="container-fluid" id="navibig">
+		  <div class="row">
+			  <div class="col-xl-8
+						  col-lg-8
+						  col-md-9
+						  d-none d-md-block navi">
+				  <ul>
+					   <li>
+						    <a href="">HOME</a>
+						    <a href="">MEN</a>
+						    <a href="">WOMEN</a>
+						    <a href="">ACCESSORIES</a>
+						    <a href="">CONTACT</a>
+						   <a href="">NEWS</a>
+					   </li>
+				  </ul>
+			  </div>
+			  <div class="col-sm-1
+						  col-1 d-md-none" id="iconmenu"><i class="fas fa-bars"></i></div>
+			  <div class=" col-xl-4
+						  col-lg-4
+						  col-md-3 d-none d-md-block searchbox">
+				  <input type="text" class="d-none d-lg-block" id="searchfill">
+				<button class="searchicon"><i class="fas fa-search"></i></button>
+				  <a href="" class="icon"><i class="far fa-shopping-cart"></i></a>
+				  <a href="" class="icon"><i class="far fa-user-alt"></i></a>
+			  </div>
+			  <div class="col-sm-1 offset-sm-9
+						  col-1 offset-9 d-md-none iconsmb">
+				  <button class="searchicon"><i class="fas fa-search"></i></button>
+			  </div>
+		  </div>
+	  </div>
+	  <!--navimb-->
+	  <div class="container-fluid d-md-none">
+		  <div class="row">
+			  <div class="col-sm-8
+						  col-8" id="navimb">
+				  <ul>
+					  <li> <a href="">HOME</a></li>
+					  <li> <a href="">MEN</a></li>
+					  <li> <a href="">WOMEN</a></li>
+					  <li> <a href="">ACCESSORIES</a></li>
+					  <li> <a href="">CONTACT</a></li>
+					  <li> <a href="">NEWS</a></li>
+					  <li> <a href="">CART <i class="far fa-shopping-cart icon"></i></a></li>
+					  <li> <a href="">USER <i class="far fa-user-alt icon"></i></a></li>
+				  </ul>
+			  </div>
+		  </div>
+	  </div>
+	  <!--searchmb-->
+	  <div class="container" style="height: 45px">
+		  <input type="text" class="d-lg-none" id="searchfillmb">
+	  </div>
+	  <!--CONTENT-->
+	  <div class="container">
+		  <div class="row">
+			  <div class="col-xl-8
+						  col-lg-8
+						  col-md-12
+						  col-sm-12
+						  col-12" id="titlecart">
+				  <h1>Cart</h1>
+				  <div class="row">
+				  <div class="col-xl-4 offset-xl-0
+							  col-lg-4 offset-lg-0
+							  col-md-4 offset-md-0
+							  col-sm-4 offset-sm-0
+							  col-4 offset-0" id="imgcart2">
+					  <img src="image/sp/DA1925_003_A_PREM.jpg" class="img-fluid">
+					  </div><!--imgcart2-->
+					<div class="col-xl-8
+								col-lg-8
+								col-sm-8
+								col-md-8
+								col-8" id="info2">
+					  <ul>
+							  <li><a><b>Nike Air Max 2021</b></a></li>
+							  <li><a>Women’s Shoe</a></li>
+							  <li><a>Color: Ghost/Ashen Slate/Obsidian Mist/Obsidia</a></li>
+							  <li><a>Size: 35  &nbsp; &nbsp; Quantity  1</a></li>
+							  <li><a>Price: $160.00</a></li>
+						  </ul>
+					  </div>  	 
+				  </div>
+				  <div class="row">
+					  <div class="col-xl-4 offset-xl-0
+								  col-lg-4 offset-lg-0
+								  col-md-4 offset-md-0
+								  col-sm-4 offset-sm-0
+								  col-4 offset-0" id="imgcart">
+					  <img src="image/sp/air-force-1-07-shoe-NMmm1B.jpg" class="img-fluid">
+					  </div><!--imgcart-->
+				 	 <div class="col-xl-8 offset-xl-0
+								  col-lg-8 offset-lg-0
+								  col-md-8 offset-md-0
+								  col-sm-8 offset-sm-0
+								  col-8 offset-0" id="info">
+						  <ul>
+							  <li><a><b>Nike Air Force 1’07s</b></a></li>
+							  <li><a>Women’s Shoe</a></li>
+							  <li><a>Color: White</a></li>
+							  <li><a>Size: 35  &nbsp; &nbsp; Quantity  1</a></li>
+							  <li><a>Price: 90.00$</a></li>
+						  </ul>
+				 	 </div>
+					  <div class="container">
+					  <div class="row">
+             		  <div class="col-xl-9 offset-xl-3
+								  col-lg-9 offset-lg-3
+								  col-md-12 offset-md-0
+								  col-sm-12 offset-sm-0
+								  col-12 offset-0">
+						<div class="col-xl-12
+									col-lg-12
+									col-md-12  d-none d-lg-block
+									col-sm-12
+									col-12" id="movetofav">
+						     <ul>
+								 <li><a><u>Move to Favourites</u> &nbsp; &nbsp;<u>Removes</u></a></li>
+							</ul>
+						  </div><!--movetofav-->                   
+							  </div>
+							  </div>
+						  </div><!--favouritezzz-->
+					  <div class="container">
+					  <div class="row">
+						  <div class="col-lg-3 d-lg-none
+									  col-md-3 offset-md-4
+									  col-sm-3 offset-sm-4
+									  col-3 offset-4" id="moreoption">
+						  More Option
+						  </div>
+						  </div>
+					  </div>
+					   <div class="container">
+						  <div class="row">
+							  <div class="col-xl-12
+										  col-lg-12
+										  col-md-12
+										  col-sm-12
+										  col-12" id="favorites">
+								  <h4>Favorites</h4>
+						  </div>
+						  
+					  </div>
+					  </div>
+					  <div class="container">
+					  <div class="row">
+						  <div class="col-xl-12
+									  col-lg-12
+									  col-md-12
+									  col-sm-12
+									  col-12 " id="infofav">
+						  <ul>
+						     <li><a>Want to view your favorites? &nbsp; <u>Log In</u>&nbsp;or&nbsp; <u>Sign In</u> </a></li>	  
+						  </ul>
+						  </div>
+						  </div>
+					  </div>
+				  </div>				  
+			  </div><!--titlecart-->
+			  <div class="col-xl-4
+						  col-lg-4
+						  col-md-12
+						  col-sm-12
+						  col-12" id="titlesummary">
+				  <h1>Summary</h1>
+				  <div class="row">
+				  <div class="col-xl-12
+							  col-lg-12
+							  col-md-12
+							  col-sm-12
+							  col-12" id="sumary">
+					  <ul> 
+						  <li><a>Do you have a <u>Promo Code?</u></a></li>
+					  </ul>
+					  </div><!--sumary-->
+				  </div>
+				  <div class="row">
+					  <div class="col-xl-10
+								  col-lg-10
+								  col-md-10
+								  col-sm-10
+								  col-10" id="infosummary">
+						  <ul>
+							  <li><a>Subtotal</a></li>
+							  <li><a>Estimated Shipping</a></li>
+							  <li><a>Estimated Tax</a></li>
+						  </ul>
+					  </div>
+					  <div class="col-xl-2
+								  col-lg-2
+								  col-md-2
+								  col-sm-2
+								  col-2" id="price">
+                          <ul>
+				          <li><a>$250.00</a></li>
+		                  <li><a>$8.00</a></li>
+						  <li><a>_</a></li>	  
+                          </ul>
+					  </div><!--price-->
+                       <div class="container">
+						   <hr>
+						   <div class="row">
+					  <div class="col-xl-10
+								  col-lg-10
+								  col-md-10
+								  col-sm-10
+								  col-sm-10
+								  col-10" id="total">
+						   <ul>
+							  <li><a>Total</a></li>
+							  </ul>
+						  </div><!--total-->
+							  <div class="col-xl-2
+										  col-lg-2
+										  col-md-2
+										  col-sm-2
+										  col-2" id="totalmoney">
+							   <ul>
+								  <li><a>$258.00</a></li>
+								  </ul>
+							   </div><!--total money-->		  
+						   </div>
+					       <hr>
+						   <div class="container">
+							   <div class="row">
+							   <div class="col-xl-12
+										   col-lg-12
+										   col-md-12
+										   col-sm-12
+										   col-12 " id="khungthanhtoan">
+								   <div class="row">
+								   <div class="col-xl-10
+											   col-lg-10
+											   col-md-10
+											   col-sm-10
+											   col-10" id="checkout">
+									   <a>Check Out</a>
+									   </div><!--checkout-->
+									   <div class="col-xl-10
+												   col-lg-10
+												   col-md-10
+												   col-sm-10
+												   col-10" id="paypal">
+										<a>Member Check out</a>
+										</div>
+								   </div>
+										
+								   </div>
+							   </div>
+						   
+						   </div><!--muc thanh toan-->
+					  </div>
+				  </div>
+			  </div><!--titlesummary-->
+				   
+		  </div>
+	  </div>
+	  <!--PRODUCT-->
+	  <div class="container">
+	  <div class="row">
+		  <div class="col-xl-12
+					  col-lg-12
+					  col-md-12
+					  col-sm-12
+					  col-12" id="titleproduct">
+		  <h3>YOU MIGHT ALSO LIKE</h3> 
+			  <div class="container">
+			  <div class="row">
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-4
+							  col-sm-6
+							  col-12 product">
+					  <img src="image/sp/air-force-1-07-next-nature-womens-shoes-fvxZ0g.jpg" class="img-fluid">
+					  <div class="row">
+					  <div class="col-xl-12
+								  col-lg-12
+								  col-md-12
+								  col-sm-12
+								  col-12 " id="infocolor">
+						  <ul>
+						  <li><a> 2 color</a></li>
+						  </ul>
+						  </div>
+					  </div>
+					  <hr>
+					  <div class="row">
+							  <div class="col-xl-12
+										  col-lg-12
+										  col-md-12
+										  col-sm-12
+										  col-12" id="infoproduct1">
+								 <ul>
+								  <li><a>Nike Air Force Nature</a></li>
+						          <li><a>Women’s Shoe</a></li>
+						          <li><a>95$</a></li>
+								 </ul>
+								  </div>
+							  </div>
+					  </div>
+				  <div class="col-xl-3
+							  col-lg-3 d-none d-lg-block
+							  col-md-4
+							  col-sm-6
+							  col-12 product">
+					  <img src="image/sp/air-force-1-le-big-kids-shoes-3JNSvS.jpg" class="img-fluid">
+					  <div class="row">
+					  <div class="col-xl-12
+								  col-lg-12
+								  col-md-12
+								  col-sm-12
+								  col-12" id="infocolor2">
+						  <ul>
+						  <li><a> 2 color</a></li>
+						  </ul>
+						  </div>
+					  </div>
+					  <hr>
+					  <div class="row">
+							  <div class="col-xl-12
+										  col-lg-12
+										  col-md-12
+										  col-sm-12
+										  col-12" id="infoproduct2">
+								 <ul>
+								  <li><a>Nike Force 1 LE</a></li>
+						          <li><a>Little Kids’ Shoe</a></li>
+						          <li><a>62$</a></li>
+								 </ul>
+								  </div>
+							  </div>
+					  </div>
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-4 d-none d-md-block
+							  col-sm-6 
+							  col-12  product">
+					  <img src="image/sp/air-force-1-crater-mens-shoes-N0dK94.jpg" class="img-fluid">
+					  <div class="row">
+					  <div class="col-xl-12
+								  col-lg-12
+								  col-md-12
+								  col-sm-12
+								  col-12" id="infocolor3">
+						  <ul>
+						  <li><a> 2 color</a></li>
+						  </ul>
+						  </div>
+					  </div>
+					  <hr>
+					  <div class="row">
+							  <div class="col-xl-12
+										  col-lg-12
+										  col-md-12
+										  col-sm-12
+										  col-12" id="infoproduct3">
+								 <ul>
+								  <li><a>Nike Air Force  Crater</a></li>
+						          <li><a>Men’s Shoe</a></li>
+						          <li><a>110$</a></li>
+								 </ul>
+								  </div>
+							  </div>
+					  </div>
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-4 
+							  col-sm-6 d-none d-sm-block
+							  col-12 product">
+					  <img src="image/sp/air-force-1-crater-big-kids-shoes-7BPFd2.jpg" class="img-fluid">
+					  <div class="row">
+					  <div class="col-xl-12
+								  col-lg-12
+								  col-md-12
+								  col-sm-12
+								  col-12" id="infocolor4">
+						  <ul>
+						  <li><a> 2 color</a></li>
+						  </ul>
+						  </div>
+					  </div>
+					  <hr>
+					  <div class="row">
+							  <div class="col-xl-12
+										  col-lg-12
+										  col-md-12
+										  col-sm-12
+										  col-12" id="infoproduct4">
+								 <ul>
+								  <li><a>Nike Air Force  Crater</a></li>
+						          <li><a>Big Kids’ Shoe</a></li>
+						          <li><a>95$</a></li>
+								 </ul>
+								  </div>
+							  </div>
+				  </div>
+				  
+				  </div>
+			  </div>
+			  </div>
+		  </div>
+	  </div><!--PRODUCT-->
+	   <!--footer-->
+	  <div class="container-fluid" id="footer" style="margin-top: 250px">
+		  <div class="row">
+			  <div class="col-xl-2 col-lg-2 col-md-5 col-sm-5 col-5 footernavi link">
+				  <ul><li><h6>Product</h6></li>
+					  <li> <a href="">Shoes</a></li>
+					  <li> <a href="">Accesessories</a></li>
+					  <li> <a href="">Gift Cards</a></li>
+					  <li> <a href="">New Arrivals</a></li>
+					  <li> <a href="">Best Seller</a></li>
+					  <li> <a href="">Sale</a></li>
+				  </ul>
+			  </div>
+			  <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-6 footernavi link">
+				  <ul><li><h6>About Nike'DT</h6></li>
+					  <li> <a href="">News</a></li>
+					  <li> <a href="">Company</a></li>
+					  <li> <a href="">Careers</a></li>
+					  <li> <a href="">Sustainabillity</a></li>
+					  <li> <a href="">COVID-19 information Center</a></li>
+				  </ul>
+			  </div>
+			  <div class="col-xl-3 col-lg-3 col-md-5 col-sm-5 col-5 footernavi link">
+				  <ul><li><h6>Support</h6></li>
+					  <li> <a href="">Help</a></li>
+					  <li> <a href="">Shopping</a></li>
+					  <li> <a href="">How to clean</a></li>
+					  <li> <a href="">Sore Locator</a></li>
+					  <li> <a href="">Order Tracker</a></li>
+					  <li> <a href="">Promotions</a></li>
+					  <li> <a href="">Size chart</a></li>
+					  <li> <a href="">Returns & Exchanges</a></li>
+				  </ul>
+			  </div>
+			  <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-6 footernavi link">
+				  <ul><li><h6>More Inspiration</h6></li>
+					  <li class="iconsocial"> 
+						  <a href=""><i class="fab fa-facebook-square"></i></a>
+					      <a href=""><i class="fab fa-instagram-square"></i></a>
+					      <a href=""><i class="fab fa-twitter-square"></i></a>
+					      <a href=""><i class="fab fa-pinterest-square"></i></a>
+					  </li>
+					  <li> <a href=""><strong>Hotline:</strong> 033 771 000</a></li>
+					  <li> <a href="">F&F building 541, Nguyen Trai Street, 01 District, Ho Chi Minh City.</a></li>
+					  <li> <a href=""><strong>Business Registration:</strong> 153810</a></li>
+					  <li> <a href=""><strong>E-Commerce Permit:</strong> 2390-309</a></li>
+				  </ul>
+			  </div>
+		  </div>
+		  <div class="row margintop30">
+			  <div class="col-xl-2
+						  col-lg-3
+						  col-md-3
+						  col-sm-4
+						  col-4 location">
+				  <i class="fas fa-map-marker-alt"></i> vietnam
+			  </div>
+			  <div class="col-xl-9
+						  col-lg-6
+						  col-md-6
+						  col-sm-7
+						  col-8" id="if"><i class="far fa-copyright"></i> 2021 Nike'DT. Inc All Rights Reserved
+			  </div>
+		  </div>
+	  </div>
+	</body>
+</html>
